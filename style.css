@@ -56,6 +56,18 @@
 
   }
 
+  /*  when you click button it color will be change  */
+
+  .split.left .btn:hover{
+    background-color: var(--left-btn-hover-color);
+    border: var(--left-btn-hover-color);
+  }
+
+  .split.right .btn:hover{
+    background-color: var(--right-btn-hover-color);
+    border: var(--right-btn-hover-color);
+  }
+
 
   /* container position & bg colorg */
   .container {
