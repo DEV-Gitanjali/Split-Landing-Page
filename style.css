@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* it is root color we can acess using var */
+:root {
+    --left-bg-color: rgba(87, 84, 236, 0.7);
+    --right-bg-color: rgba(43, 43, 43, 0.8);
+    --left-btn-hover-color: rgba(87, 84, 236, 1);
+    --right-btn-hover-color: rgba(28, 122, 28, 1);
+    --hover-width: 75%;
+    --other-width: 25%;
+    --speed: 1000ms;
+  }
+  
 
 /* size of the box */
 * {
@@ -37,6 +48,18 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  /* before split this left it can looking like  */
+  .split.left::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:var(--left-bg-color) ;
+  }
+
+
+
 
   /* adding right side images */
   .split.right {
