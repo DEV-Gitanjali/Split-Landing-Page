@@ -29,3 +29,19 @@
     height: 100%;
     overflow: hidden;
    }
+
+   /* adding left side images  */
+   .split.left {
+    left: 0;
+    background: url('ps.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* adding right side images */
+  .split.right {
+    right: 0;
+    background: url('xbox.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
