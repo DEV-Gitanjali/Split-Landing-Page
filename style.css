@@ -49,7 +49,7 @@
     background-size: cover;
   }
 
-  /* before split this left it can looking like  */
+  /* before split left page it can looking like  */
   .split.left::before{
     content: '';
     position: absolute;
@@ -57,14 +57,22 @@
     height: 100%;
     background-color:var(--left-bg-color) ;
   }
-
-
-
-
+  
   /* adding right side images */
   .split.right {
-    right: 0;
-    background: url('xbox.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+      right: 0;
+      background: url('xbox.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  
+    /* before split right  page looking like */
+    .split.right::before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color:var(--right-bg-color) ;
+    }
+  
+  
